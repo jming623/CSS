@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* 특정 속성을 지닌 태그선택 대괄호는 속성을 의미 */
+        input[type="text"] {color: blue;}
+        /* 만약 이곳에 속성을 지정해주지 않았다면 버튼도 파란색으로 바뀜 */
+        input[type="button"] {color:orangered;}
+
+        /* *= - 특정 속성을 하나라도 포함한 태그선택 */
+        li[class*="col"] {color: red;}
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <input type="text" name="t1"> <br>
+        <input type="text" name="t2"> <br>
+        <input type="text" name="t3"> <br>
+        <input type="text" name="t4">
+        <input type="button" name="t5" value="버튼">
+    </div>
+<br>
+    <div>
+        <ul>
+            <li class="col-1">리스트1</li>
+            <li class="col-2">리스트2</li>
+            <li class="col-3">리스트3</li>
+            <li class="col-4">리스트4</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

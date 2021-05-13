@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 태그는 건들지않고 인라인속성에서만, 블럭속성에서만 사용 할수있는 기능을 사용할때 변경해서 사용 */
+        /* 블럭속성을가지고있는 div태그를 인라인속성으로 변경한다. */
+        .list > .inner {
+            display: inline;
+        }
+        /* 반대로 */
+        .list>span{
+            display: block;
+        }
+
+        .list > a{
+            /* 인라인속성일때는 width,height를 적용할 수없다 */
+            /* 그냥 block으로 바꿔줬을때는 줄바꿈이일어나고 배치구도가 바뀌게된다. */
+            /* 이럴때 inline-block을 사용한다. 줄바꿈은 일어나지않음(인라인),block요소들의 크기,높이,정렬 기능을 사용할 수 있게된다. */
+            
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            /* border: 1px solid #777; */
+            text-align: center;
+            line-height: 100px;           
+        }
+
+        .box {display: none;} /*화면에서 사라짐(숨김)*/
+    </style>
+
+</head>
+<body>
+    <div class="list">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+
+    <div class="list">
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span>
+    </div>
+
+    <div class="list">
+        <a href="script06(디스플레이_메뉴).html">인라인</a>
+        <a href="script06(디스플레이_메뉴).html">인라인</a>
+        <a href="script06(디스플레이_메뉴).html">인라인</a>
+    </div>
+
+    <div class="box"> 
+        아이디와 비밀번호를 확인하세요!
+    </div>
+
+</body>
+</html>

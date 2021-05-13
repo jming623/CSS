@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{ border :1px solid #777}
+        /* 블럭요소에서 가로 정렬 */
+        .tx1{text-align: left;}
+        .tx2{text-align: center;}
+        .tx3{text-align: right; text-decoration: underline;}
+
+        /* vertical-align은 기준속성에 문법을 적용  */
+        .tx4 img{vertical-align:top;}
+        .tx5 img{vertical-align:middle;}
+        .tx6 img{vertical-align:bottom;}
+
+
+        /*꿀팁!!!!!!!!! 기준이없어 vertical-alin 을 사용할 수 없을때 박스높이와 문단간격을 맞춰서 가운데로 보내주는 방법 */
+        .box{height: 100px; line-height:100px ;} /*line-height는 문단간격*/
+    </style>
+
+
+</head>
+<body>
+    <!-- 문단정렬은 블럭단위에서 사용함 -->
+    <p class="tx1">안녕하세요~</p>
+    <p class="tx2">안녕하세요~</p>
+    <p class="tx3">안녕하세요~</p>
+   
+    <p class="tx4">
+        안녕하세요
+        <img src="img/html5.png" alt="이미지">       
+    </p>
+    <p class="tx5">
+        안녕하세요
+        <img src="img/jquery.png" alt="이미지">   
+    </p>
+    <p class="tx6">
+        안녕하세요
+        <img src="img/css3.png" alt="이미지">   
+    </p>
+
+    <p class="box">코드를 봐 개꿀팁이 숨어있다고</p>
+
+
+</body>
+</html>

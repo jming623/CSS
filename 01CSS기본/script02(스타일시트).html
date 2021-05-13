@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 전역적으로 사용해야할 스타일시트는 외부에
+         이 파일에만 적용할 스타일시트는 파일 내부에
+         특정 태그에만 적용할 스타일시트는 태그안에(인라인)
+        -->
+    
+    <!-- 외부스타일시트 적용 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 내부스타일 시트 해당화면에 적용할 스타일-->
+    <style>
+        span {color: blue;}
+        /* p {color: blue;} 여기에 이렇게 선언되어있다면 우선순위가 인라인 > 내부 > 외부 라 파란색으로 적용됨 */
+
+    </style>
+</head>
+<body>
+    
+    <p>외부스타일시트</p>
+
+    <span>span태그는 인라인</span>
+
+    <p style="color:darkseagreen;">인라인시트</p>
+
+    <div>임포트 @import url("경로")</div>
+
+    
+</body>
+</html>
