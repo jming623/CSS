@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 디자인 시작전 기본적으로 많이하는 세팅 */
+
+        /* 디자인 시작전에 모든요소에 여백을 0으로 지정한다. */
+        *{padding:0px; margin:0px;}
+        /* 디자인 시작전에 리스트형싱을 없앱니다. */
+        ul,li {list-style: none;}
+
+        .box{background-color: black; text-align:center;}
+
+        .box > ul > li {display: inline-block;}
+
+        /* tip. li에서 width,height를 조절할 수도있지만, 메뉴를 선택할때 li에 주면 정확히 메뉴를 누르지않으면 링크를 타지않게되지만, a태그에 넣어주면 메뉴 */
+        .box>ul>li>a{color:white; display: block; width:80px; height:50px; line-height: 50px; text-decoration: none;}
+        .box > ul > li:hover{background-color:#777;} 
+
+        .inner{
+            width: 1000px;
+            margin: 50px auto;
+        }
+        .content{
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="box">
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 슬라이더영역 -->
+    <section>
+        <div>
+            <img src="img/1.jpg" alt="슬라이더1">
+        </div>
+
+        <div class="inner">
+            <h2>오늘의 발견...</h2>
+            <div class="content">
+                본문영역..    
+            </div>
+            
+        </div>
+        
+    </section>
+</body>
+</html>

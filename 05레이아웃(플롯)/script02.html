@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .list{
+            width:50%; border: 1px solid #777; margin:0 auto;
+            overflow: hidden;
+        }
+
+        .list .inner{
+            float: left;
+            width: 25%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .cotent{
+            overflow: hidden;
+        }
+
+        .left{
+            float:left;
+        }
+
+        .right{
+            float:right;
+        }
+
+        .left>strong{
+            display: block;
+        }
+
+        .clear{
+            clear:both;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="list"> <!-- 바깥상자 -->
+        <div class="inner"> <!-- 안쪽상자 -->
+            <div> <!-- 이미지영역  -->
+                <img src="/03백그라운드/img/bgimg.png" alt="이미지영역">
+            </div>
+            <div class="content"> <!-- 내용영역 -->
+                <div class="left"> <!-- 좌 -->
+                    <strong>좌</strong>
+                    <strong>좌</strong>
+                    <strong>좌</strong>
+                </div>
+                <div class="right"> <!-- 우 -->
+                    <strong>우</strong>
+                </div>
+                <div>
+                    (아래 글을 쓰고싶었는데..)
+                </div>
+                <div class="clear">
+                    float의 성질을 해제하는 방법
+                </div>
+                <div>
+                    위에서 float이 해제되서 여기서부터는 잘나와요
+                </div>
+            </div>
+        </div> <!-- 안쪽상자 -->
+        
+        <div class="inner">
+            <div>
+                <img src="/03백그라운드/img/bgimg.png" alt="이미지영역">
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+
+        <div class="inner">
+            <div> 
+                <img src="/03백그라운드/img/bgimg.png" alt="이미지영역">
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+
+        <div class="inner">
+            <div> 
+                <img src="/03백그라운드/img/bgimg.png" alt="이미지영역">
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+    </div> <!-- end 바깥상자 -->
+
+</body>
+</html>

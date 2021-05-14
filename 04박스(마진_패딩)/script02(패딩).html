@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{background-image: url(img/bg_grid.jpg);}
+
+        p{
+            background-color:lightblue;
+            width: 600px;
+            height: 300px;
+            border: 1px solid #777;
+
+            /*아래 패딩을 지정하는 3가지방법은 모두 기억하고 있어야함(매우중요)*/
+            padding: 20px; /*상하좌우 전부다 적용(패딩도 보더처럼 상하좌우각각 적용해줄 수 있다.)*/
+            padding: 10px 20px 30px 40px; /*한번에 작성도가능한데 위부터 시계방향으로 상->우->하->좌 순으로 적용됨 */
+            padding: 10px 20px; /*두개만 작성도 가능한데 앞에요소는 위아래적용, 뒤에요소는 좌우적용*/
+        }
+    </style>
+</head>
+<body>
+    <p>
+        패딩이란!? 무엇인고???
+        윤곽을 기준으로 안쪽여백입니다!!
+        개발자도구(F12)로 보게된다면 초록색으로 표현되는 영역이 패딩영역입니다.
+
+        패딩은 박스의 크기에 포함이 되고, 겹치지 않습니다
+        width(600) + padding좌우(20px) + border(2.5px) = 642.5
+       
+    </p>
+</body>
+</html>

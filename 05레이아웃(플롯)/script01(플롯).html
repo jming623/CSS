@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding:0px; margin: 0px;}
+        ul,li{list-style: none;}
+
+        .boxList{
+            width: 80%; /*상위태그의 영역기준*/
+            margin: 0px auto;  /*가운데 정렬*/
+        }
+
+        /* 
+        1. block요소에 li를 가로로 쌓기 위해서 float속성을 이용하는데 단순히 float만 쓰면 부모요소가 자식요소를 담지못하는 문제가 있습니다.
+        
+        해결방법
+        1. 가상요소방법  
+
+        .boxList:after {content: ""; display: block; clear:both ;} 지금이해하긴 어렵고 그냥 외워둘것
+
+        2. 부모요소에 overflow:hidden을 넣는다 (일단 지금은 그냥 외울 것 )*/
+        
+
+
+        .boxList{overflow:hidden;}
+        
+
+        .boxList li{
+            float: left; /*상자를 옆으로 쌓는다*/
+            width: 16.6666%; /*부모요소에 대해서 박스개수 등분*/
+            border: 1px solid #777;
+            /* 실제 border에 크기도 박스의 크기에 포함되기 때문에 16.6666%가 넘게됩니다.
+               이때 border의 크기가 box크기에서 제외*/
+            box-sizing: border-box; 
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <ul class="boxList">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+    </ul>
+
+
+</body>
+</html>
