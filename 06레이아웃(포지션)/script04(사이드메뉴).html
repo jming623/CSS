@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin:0px; margin:0px;}
+        ul,li{list-style: none;}
+
+        header{position:fixed; left:0px; top:0px; width:100%; z-index:50;} /* 포지션영역 위치값은 반드시 지정!*/ 
+        
+        section{margin-top:170px;}
+
+        body{height: 1000px;}
+
+        .logo{text-align: center; background-color: white;}
+        .menu{text-align: center; background-color: black; padding:0px;}
+        .menu > li {display:inline-block;}
+        .menu > li > a {display:block; padding:20px; color:white; text-decoration: none;} 
+        .menu > li > a:hover{background-color: #777;}
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo"><!-- 이미지영역 -->
+            <img src="/03백그라운드/img/bgimg.png">
+        </div>
+        <nav><!-- 메뉴영역 -->
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>              
+            </ul>
+        </nav>
+    </header>
+
+    <section>      
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+        <p>내용~~~~~~~~~</p>
+    </section>
+
+    <!-- 원래는 이렇게 중간에 선언하면 안됨 -->
+    <style> /* 사이드바 */
+        .side{ text-align: center; position:fixed; right:0px; top:470px; z-index: 30;} 
+        /* 포지션이 겹치게되면 z-index로 우선순위를 정한다. 보통 0-50사이로 지정하게되고 높은쪽이 위로, 낮은쪽이 뒤로 나오게됨. */
+        .side-list li a {
+            display:block;
+            padding: 20px; 
+            background-color: #282828; 
+            text-decoration: none; 
+            color:white; 
+            font-size: 0.8em;
+            border-top: 1px solid #777;
+            letter-spacing: -1;
+            }
+
+    </style>
+
+
+    <aside class="side"><!-- 포지션으로 작성될거기 때문에 위치는 아무곳에나 선언되어도 상관없다 -->
+        <ul class="side-list">
+            <li>
+                <a href="#">
+                    <p>카톡</p>
+                    <p>jming623</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <p>전화번호</p>                    
+                </a>
+            </li>
+            <li><a href="#">주소</a></li>
+            <li><a href="#">예약</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

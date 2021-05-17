@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   
+
+    <style>
+        *{margin:0px; margin:0px;}
+        ul,li{list-style: none;}
+
+        header{position:fixed; left:0px; top:0px; width:100%; z-index:50;} /* 포지션영역 위치값은 반드시 지정!*/ 
+        
+        section{margin-top:160px;}
+
+        body{height: 1000px;}
+
+        .logo{text-align: center; background-color: white;}
+        .menu{text-align: center; background-color: black; padding:0px;}
+        .menu > li {display:inline-block;}
+        .menu > li > a {display:block; padding:20px; color:white; text-decoration: none;} 
+        .menu > li > a:hover{background-color: #777;}
+
+        /* 
+        스티키는 일정스크롤이 내려올때까지는 고정되어있다가 일정시점을 넘어가게되면 fixed로 동작하게 해주는 기능 
+        스티키를 사용할때에는 반드시 지켜줘야하는 규칙(?)이 두가지있다.
+            1. top, bottom, left, right중 한가지 옵션이 반드시 존재해야되고 (보통 top을 넣어준다.)
+            2. 어떤 부모요소든 overflow:hidden이 들어있으면 동작하지 않는다.
+            
+            top속성에는 스크롤이 이동됐을 때 fixed되는 지점을 기록한다. (header가 고정이라면 헤더의 높이만큼) 
+         */
+
+
+        .inner1{background-color: thistle; height:500px;}
+        .inner2{background-color: wheat; position: sticky; top:160px;} 
+        .inner3{background-color: yellowgreen;height:1500px;}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo"><!-- 이미지영역 -->
+            <img src="/03백그라운드/img/bgimg.png">
+        </div>
+        <nav><!-- 메뉴영역 -->
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>              
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="inner1">
+            내용
+        </div>
+        
+        <div class="inner2">
+            스티키
+        </div>
+        
+        <div class="inner3">
+            냐용..
+        </div>
+
+    </section>
+
+</body>
+</html>

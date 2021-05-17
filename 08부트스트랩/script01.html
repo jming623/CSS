@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일참조 -->
+    <link rel="stylesheet" href="/08부트스트랩/bootstrap-3.3.2-dist/css/bootstrap.css">
+    <!-- 부트스트랩 테마파일참조 -->
+    <link rel="stylesheet" href="/08부트스트랩/bootstrap-3.3.2-dist/css/bootstrap-theme.css">
+    <!-- 부트스트랩 js참조 -->
+    <script src="/08부트스트랩/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+
+    <style>
+        .box{background-color: aqua;}
+    </style>
+
+</head>
+<body>
+    <h2>부트스트랩을 활용한 반응형그리드</h2>
+
+    <!-- 부트스트랩의 그리드 사용방법 container 안에 row클래스를 넣고 row클래스안에 class="지정된 그리드 표기형식" -->
+    <section>
+        <div class="container">
+            <!-- lg(1200px이상) 6칸씩배치 (총12칸을 2칸으로 나눠) --> 
+            <div class="row">
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+                <div class="col-lg-2 box">박스1</div>
+            </div>
+            <hr/>
+            <!-- md(992px이상) 6칸씩배치 -->
+            <div class="row">
+                <div class="col-md-2 box">박스2</div>
+                <div class="col-md-2 box">박스2</div>
+                <div class="col-md-2 box">박스2</div>
+                <div class="col-md-2 box">박스2</div>
+                <div class="col-md-2 box">박스2</div>
+                <div class="col-md-2 box">박스2</div>                
+                <div class="col-md-2 box">박스2</div>                
+            </div>
+            <hr/>
+            <!-- sm(768px이상) 6칸씩배치 -->
+            <div class="row">
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+                <div class="col-sm-2 box">박스3</div>
+            </div>
+            <hr/>
+            <!-- xs(768px이하) 절반배치 -->
+            <div class="row">
+                <div class="col-xs-6 box">박스4</div>
+                <div class="col-xs-6 box">박스4</div>
+                <div class="col-xs-6 box">박스4</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
