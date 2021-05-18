@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- 부트스트랩 css파일참조 -->
+     <link rel="stylesheet" href="/08부트스트랩/bootstrap-3.3.2-dist/css/bootstrap.css">
+     <!-- 부트스트랩 테마파일참조 -->
+     <link rel="stylesheet" href="/08부트스트랩/bootstrap-3.3.2-dist/css/bootstrap-theme.css">
+     <!-- jquery라이브러리 참조 (순서중요! js보다 위에)--> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- 부트스트랩 js참조 -->
+     <script src="/08부트스트랩/bootstrap-3.3.2-dist/js/bootstrap.js"> </script>
+     
+     <style>
+
+     </style>
+
+</head>
+<body>
+    
+    <!--
+         모달창은 화면에 창을 숨겨두고, 버튼클릭시 숨겨진 창을 보여주는 형태로 동작. 
+    
+         모달창같이 동적인 기능을 사용하려면 Jquery 라이브러리 참조가 필요합니다.
+    -->
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">정보수정</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+    <!-- Modal content 버튼디자인은 다른것으로 바꿀 수 있음-->
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">정보수정 실패</h4>
+                </div>
+                 <div class="modal-body">
+                    <p>로그인이 필요한 작업입니다.</p>
+                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
