@@ -1,0 +1,30 @@
+/* 폰트선언 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+/* 기본선언 */
+body, html{
+    font-family: 'Jua', sans-serif;
+    width:100%;   
+}
+
+*{
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+/* 헤더 */
+
+.navbar-brand{
+    line-height: 20px;
+}
+

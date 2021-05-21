@@ -1,0 +1,124 @@
+
+.title > small{
+    color:#777;
+}
+.title{
+    padding: 0px;
+}
+
+.detail-img{
+    max-width: 100%;
+    height: auto;
+}
+.detail-info >h3 , .detail-info > h2{
+    margin:0px; 
+}
+.detail-info > hr{
+    margin: 10px 0;
+}
+.detail-info{
+    min-height: 345px;
+}
+
+.detail-info > .delivery{
+    color:#888;
+}
+
+.detail-price{
+    overflow: hidden;
+}
+
+.detail-left{
+    float:left;
+    
+}
+
+.detail-left{
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.detail-right{
+    float:right;
+}
+
+.detail-right > strong{
+    font-size: 30px;
+}
+
+.detail-btn{
+    overflow: hidden;
+}
+
+.detail-btn > button{
+    text-align: center;
+    height: 60px;
+    font-size: 18px;
+    border: 1px solid #ccc; 
+}
+
+.btn-left{
+    float:left;
+    width: 50%;
+}
+.btn-right{
+    float:right;
+    width:50%;
+}
+
+@media(max-width:1200px){
+    .detail-info{
+        margin-top:10px;
+    }
+}
+
+.reply-wrap{
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    position:relative;
+    padding:15px;
+}
+
+.reply-img{
+    position: absolute;
+    left:15px;
+    top:15px;
+}
+
+.reply-content{
+    padding-left: 60px;
+}
+
+.resize{
+    resize: vertical;
+    min-height: 180px;
+    transition: all 0.5s ease-in-out;
+}
+
+.resize:focus{
+    height:150px;
+}
+
+.reply-inner{
+    overflow: hidden;
+}
+
+.reply-inner > .reply-left{
+    float:left;
+}
+
+.reply-inner > .reply-right{
+    float:right;
+}
+
+.form-group {
+    margin-bottom: 7px;
+}
+
+.reply-right > a{
+    color:#777; 
+}
+
+.reply-content p {
+    margin:0;
+}
