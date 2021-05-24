@@ -12,7 +12,7 @@
 .join-form{
 
     /* 
-    부트스르랩에서 col클래스가 float를 가지고 있어서 가운데 정렬이 불가
+    부트스트랩에서 col클래스가 float를 가지고 있어서 가운데 정렬이 불가
     한개의 col클래스를 가운데 정렬할 때는 margin과 float을 제거
     */
     margin: 0 auto;
@@ -26,22 +26,13 @@
     padding:30px;
 }
 
-@media(max-width:768px){ /* 모바일화면에서 적용 */
-    .join-form form{
-        padding:10px;
-
-    }
-
-    .login-img, .login-form{
-        padding:0px;
-    }
-}
 
 /* 로그인화면 */
 
 .login-page{
     margin:0 auto;
     float: none;
+    margin-bottom: 50px;
 }
 
 .login-wrap{
@@ -59,6 +50,8 @@
 .login-img{
     
     text-align: center;
+    padding: 47px 30px;
+    height: 100%;
     
 }
 
@@ -68,14 +61,33 @@
 }
 
 .login-form{
-    padding:47px 30px;
+    padding:47px 30px;  
 }
 
 .login-form label{
     margin:0px;
 }
 
+@media(max-width:768px){ /* 모바일화면에서 적용 */
+    .join-form form{
+        padding:10px;
 
+    }
+
+    .login-wrap{
+        padding:0px;
+    }
+
+    .login-img, .login-form{
+        padding:20px;
+    }
+}
+
+@media(min-width:1200px){
+    .login-wrap > .login-form{
+        padding:89px 30px;
+    }
+}
 
 
 
