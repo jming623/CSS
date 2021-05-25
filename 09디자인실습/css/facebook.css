@@ -62,6 +62,7 @@
 .facebook-content-img > img{
     width:50px;
     height: auto;
+   
 }
 
 .facebook-content-img{
@@ -112,4 +113,8 @@
 .facebook-content-icon-left{
     float: left;
     width:33.33333%;
+}
+
+.facebook-content-icon-left > span{
+    vertical-align: middle;
 }

@@ -1,0 +1,40 @@
+CSS정리
+
+1. block vs inline 
+block은 넓이를 가진다. 화면전체영역(한줄)을 가진다. 줄바꿈이 일어난다. 높이,넓이등을 지정할수 있다. 블럭 요소에는 블럭,인라인이 모두올 수 있다.
+inline은 요소의 크기만큼의 크기만 가지게된다.  줄바꿈이 일어나지 않는다. 높이,넓이등을 지정할수 없다. 인라인 요소에는 인라인만이 올 수 있다.
+
+2.font~~
+font-size ,font-weight, 웹폰트 정도만 알아도 무관 
+
+3.디스플레이
+display: block, inline, inline-block, none (flex까지 다섯가지 아직 배우지 않음)
+
+4. background-~~
+image, color, size, 
+
+5.패딩 vs 마진
+padding은 border기준 안쪽으로 여백 (상자와 상자의 간격을 띄어줄때 사용) 4가지값을 줄때 상, 우, 하, 좌, 순으로 2가지 값을 줄때 상하, 좌우 
+패딩과 패딩은 곂친다. 보더값을 상자에 포함시키는 법 (box-sizing: border-box;)
+
+margin은 border기준 바깥여백 , 마진은 곂치지 않는다. 
+
+6. float
+부모요소에 overflow:hidden; (선언하지않으면 높이값이 0이됨.)
+
+7.position (relative, absolute, static, fixed, sticky)
+3D화면이라 생각하면 됨. x y축뿐 아니라 z축의값도 가지게됨. 
+relative가 선언된 태그 기준으로 z축으로 올림
+absolute는 relative가 선언된 부모태그 기준으로 z축으로 올림 (부모요소에 relative가 선언되지 않을 시 body기준으로 정렬됨)
+fixed는 z축으로 올리고 고정시킴
+top or buttom, left or right속성을 꼭 써줘야한다.
+z-index를 통해 우선순위를 지정해 줄 수 있다.
+
+8.미디어 쿼리
+@media(max-width:768){	} 768이하에서 동작하는~
+@media(max-width:768){	} 768이상에서 동작하는~
+
+9.트렌지션,애니메이션(은 아직배우지않음)
+(4가지 속성) transition: css속성(ex:opacity,all), 기간(1s), transition속성(ex:else-in-out), 딜레이
+
+10. +부트스트랩 (반응형) 
