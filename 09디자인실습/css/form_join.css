@@ -26,6 +26,10 @@
     padding:30px;
 }
 
+p{
+    margin-bottom: 0;
+}
+
 
 /* 로그인화면 */
 
