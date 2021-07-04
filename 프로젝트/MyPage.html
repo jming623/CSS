@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일참조 -->
+    <link rel="stylesheet" href="/프로젝트/boot/css/bootstrap.css">
+    <!-- jquery라이브러리 참조 (순서중요! js보다 위에)--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 부트스트랩 js참조 -->
+    <script src="/프로젝트/boot/js/bootstrap.js"> </script>
+    <link rel="stylesheet" href="CSS/MyPage.css">
+</head>
+<body>
+    
+    <section class="mypage">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" >
+                <div class="mypage-title">
+                    <span>마이페이지</span>
+                </div>   
+
+                <ul class="nav nav-tabs mypage-nav">
+                    <li><a data-toggle="tab" href="#menu2">작성글</a></li>
+                    <li class="active"><a data-toggle="tab" href="#menu1">내정보</a></li>
+                </ul>
+    
+                <div class="tab-content mypage-wrap">
+                    <div id="menu1" class="tab-pane fade in active mypage-content">
+                        <form action="">
+                            <table class="table">
+                                <tbody class="m-control">
+                                    <tr><td class="m-title">아이디</td></tr>
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                    <tr><td class="m-title">이름</td></tr>                              
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                    <tr><td class="m-title">이메일</td></tr>                              
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                    <tr><td class="m-title">전화번호</td></tr>                              
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>                                   
+                                    <tr><td class="m-title">주소</td></tr>                              
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                                                 
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                                             
+                                    <tr>
+                                        <td><input class="form-control mypage-input" type="text" name="" id="" value="" readonly ></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-block">수정하기</button>    
+                            </div>                           
+
+                        </form>
+    
+                    </div>
+                    <div id="menu2" class="tab-pane fade mypage-content">
+                        <h3>작성글</h3>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+</body>
+</html>
