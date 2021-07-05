@@ -1,0 +1,4 @@
+1. vscode를 다운받고 -> File-preference에서 setting- 각종 설정가능(우리는 wheel에서 mouse wheel zoom을 활성화시킴 )-> CSS파일을 사용할 폴더 만들고 지정-> Extensions에서 Live Server install -> html파일 작성후에(html:5) -> 우클릭 open with live server클릭 바로뜨면 그냥하고 안뜬다면 CSS폴더에다가 새로운폴더 .vscode를 생성 -> 폴던안에 setting.json파일을 만들고 내용물 작성 { liveServer.settings.port": 5501 }
+
+
+
