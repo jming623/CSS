@@ -13,7 +13,11 @@
     <!-- 부트스트랩 js참조 -->
     <script src="/프로젝트/boot/js/bootstrap.js"> </script>
     <link rel="stylesheet" href="CSS/creator.css">
+    <!-- jcrop -->
+    <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
+    <script src="https://unpkg.com/jcrop"></script>
     
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
@@ -22,7 +26,7 @@
         <div class="profile-header col-lg-12">
             <div class="profile-header-inner">
                 <div class="creator-profile-header-modify">
-                    <a href=""><i></i></a>
+                    <a href=""><i><input type="file" class="creator-profile-img-input" name="profile-file" id="profile-file"></i></a>
                 </div>
             </div>
         </div>
@@ -32,10 +36,13 @@
             <div class="creator-profile">
                 
                 <div class="creator-profile-img">
-                    <img class="" src="https://d2vi0z68k5oxnr.cloudfront.net/40a3c83c-f048-44af-b9db-a65edbc519b2/original.jpeg?d=lg-logo" style="width: 128px; height: 128px;">
-                    <div class="creator-profile-img-modify">
-                        <a href=""><i></i></a>
-                    </div>
+                    <form action="">
+                        <img class="" id="creator-profile-img-target" src="https://d2vi0z68k5oxnr.cloudfront.net/40a3c83c-f048-44af-b9db-a65edbc519b2/original.jpeg?d=lg-logo" style="width: 128px; height: 128px;">
+
+                        <div class="creator-profile-img-modify">
+                            <a href=""><i><input type="file" class="creator-profile-img-input" name="profile-file" id="profile-file"></i></a>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="creator-name">jming623</div>
@@ -52,7 +59,7 @@
                     </div>
 
                     <div class="creator-description-textarea" id="creator-description-textarea" style="display: none;"> 
-                        <textarea name="" id="" cols="33" rows="15">Crypto.com is the best place to buy, sell, and pay with crypto. Crypto.com serves over 10 million customers today, with the world’s fastest growing crypto app, along with the Crypto.com Visa Card — the world’s most widely available crypto card, the Crypto.com Exchange and Crypto.com DeFi Wallet.Crypto.com NFT is the premier platform for collecting and trading NFTs, carefully curated from the worlds of art, design, entertainment and sport.FAQs: help.crypto.com</textarea>
+                        <textarea name="" id="" cols="33" rows="14">Crypto.com is the best place to buy, sell, and pay with crypto. Crypto.com serves over 10 million customers today, with the world’s fastest growing crypto app, along with the Crypto.com Visa Card — the world’s most widely available crypto card, the Crypto.com Exchange and Crypto.com DeFi Wallet.Crypto.com NFT is the premier platform for collecting and trading NFTs, carefully curated from the worlds of art, design, entertainment and sport.FAQs: help.crypto.com</textarea>
                     </div>
                     
                     <div id="creator-descrption-btn-wrap">
@@ -62,15 +69,15 @@
                             </button>
                         </div>
                         <div id="creator-descrption-btn-inner2" style="display: none;">
-                            <button type="button" id="creator-descrption-btn2" class="btn btn-default btn-xs">수정</button>
-                            <button type="button" id="creator-descrption-btn3" class="btn btn-default btn-xs">취소</button>
+                            <button type="button" id="creator-descrption-btn2" class="btn btn-default btn-xs" onclick="location.reload()">수정</button>
+                            <button type="button" id="creator-descrption-btn3" class="btn btn-default btn-xs" onclick="location.reload()">취소</button>
                         </div>
                     </div>
                     </form>
                 </div>
 
                 <div class="creator-social">
-                    <a href="https://www.instagram.com/"><img src="https://facebook.com/business/f/GKgNuQf_-sDApnABAF8DEyusekA-bj0JAAAD" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="/프로젝트/img/instaLogo.png" alt=""></a>
                 </div>
                  
             </div>
@@ -85,23 +92,51 @@
 
                         <div class="tab-content">
                             <div id="menu1" class="tab-pane fade in active">
-                                
-                                <div class="creator-content-info">
-                                    <div class="creator-content-info-detail">
+                                <form action="">
+                                    <div class="creator-content-info">
                                         <p>전공분야:</p>
-                                        <small style="min-height: 50px;">디자인설계</small>
-                                    </div>
-                                    <div class="creator-content-info-detail">
-                                        <p>경력사항:</p>
-                                        <small>바른미술학원 2년근무</small>
-                                    </div>
-                                    <div class="creator-content-info-detail">
-                                        <p>수상경력:</p>
-                                        <small>미술경시대회 우승</small>
-                                    </div>
-                                </div>
+                                        
+                                        <div class="creator-content-info-detail">
+                                            <small style="min-height: 50px;">디자인설계</small>
+                                        </div>
 
-                            </div>                          
+                                        <div class="creator-content-info-textarea" style="display: none;">
+                                            <textarea name="" id="">디자인설계</textarea>
+                                        </div>
+
+                                        <p>경력사항:</p>
+
+                                        <div class="creator-content-info-detail">
+                                            <small>바른미술학원 2년근무</small>
+                                        </div>
+
+                                        <div class="creator-content-info-textarea" style="display: none;">
+                                            <textarea name="" id="" >바른미술학원 2년근무</textarea>
+                                        </div>
+
+                                        <p>수상경력:</p>
+
+                                        <div class="creator-content-info-detail">
+                                            <small>미술경시대회 우승</small>
+                                        </div>
+
+                                        <div class="creator-content-info-textarea" style="display: none;">
+                                            <textarea name="" id="">미술경시대회 우승</textarea>
+                                        </div>    
+                                           
+                                        <div class="creator-content-info-edit1">
+                                            <button type="button" id="creator-content-info-editBtn">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </button>                                            
+                                        </div>
+                                            
+                                        <div class="creator-content-info-edit2" style="display: none;">
+                                            <button type="button" class="btn btn-default" onclick="location.reload()">수정</button>
+                                            <button type="button" class="btn btn-default" onclick="location.reload()">취소</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
 
                             <div id="menu2" class="tab-pane fade">
                                 
@@ -164,17 +199,32 @@
 </html>
 
 <script>
-
-    $("#creator-descrption-btn").click(function(){
+    
+    //프로필 수정
+    $("#creator-descrption-btn1").click(function(){
         
         //텍스트 교체
-        
+       console.log("1");
+
+       $("#creator-description-content").css("display","none");
+       $("#creator-description-textarea").css("display","inline-block");
 
         //버튼 교체
         
+        $("#creator-descrption-btn-inner1").css("display","none");
+        $("#creator-descrption-btn-inner2").css("display","inline-block");
+    })
 
+    //제작자정보 수정
+    $("#creator-content-info-editBtn").click(function(){
 
-        
+        //텍스트 교체
+        $(".creator-content-info-detail").css("display","none");
+        $(".creator-content-info-textarea").css("display","block");
+
+        //버튼교체
+        $(".creator-content-info-edit2").css("display","block");
+        $(".creator-content-info-edit1").css("display","none");
 
     })
 
