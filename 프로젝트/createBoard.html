@@ -13,24 +13,39 @@
     <!-- 부트스트랩 js참조 -->
     <script src="/프로젝트/boot/js/bootstrap.js"> </script>
     <link rel="stylesheet" href="/프로젝트/CSS/createBoard.css">
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
 </head>
 <body>
     
     <section>
         <div class="container">           
+            
+            <div class="creation-list-btn" id="creation-list-btn">
+                <button type="button" class="creation-list-active">2D Art</button>
+                <button type="button" class="">3D Art</button>
+                <button type="button" class="">Video/Firm</button>
+                <button type="button" class="">Interior</button>
+                <button type="button" class="">Architecture</button>
+            </div>
+
             <div class="row">
-                <div class="col-md-3 col-md-6">
+                <!-- 사진1 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
                     <div class="creation-list">
                         <div class="prod-img"> <!-- 이미지영역 -->
-                            <img src="img/car6.jpg" art="">
-                        </div>
-                        <div> <!-- 제작자프로필영역 -->
-                            <div> <!-- 왼쪽 -->
-                                <img src="img/profile.png" alt="">
-                                <small>제작자1</small>
+                                <a href=""><img src="img/car3.jpg" art=""></a>
                             </div>
-                            <div> <!-- 오른쪽 -->
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
                                 <ul>
                                     <li><i class="glyphicon glyphicon-star"></i></li>
                                     <li><i class="glyphicon glyphicon-star"></i></li>
@@ -42,9 +57,413 @@
                         </div>
                     </div>
                 </div>
+                <!-- 사진2 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img01.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진3 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img04.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진4 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/car9.png" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진5 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img03.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 추가 -->
+                 <!-- 사진1 -->
+                 <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/car3.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진2 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img01.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진3 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img03.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진4 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/car9.png" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 사진5 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img04.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 추가 -->
+                 <!-- 사진1 -->
+                 <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/car3.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진2 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img01.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진3 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img03.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 사진4 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/car9.png" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->    
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 사진5 -->
+                <div class="creation-list-wrap col-md-3 col-xs-4">
+                    <div class="creation-list">
+                        <div class="prod-img"> <!-- 이미지영역 -->
+                            <a href=""><img src="img/img04.jpg" art=""></a>
+                        </div>
+                        <div class="prod-profile"> <!-- 제작자프로필영역 -->
+                            <div class="prod-profile-img"> <!-- 왼쪽 -->
+                                <a href="">
+                                    <img src="img/profile.png" alt="">
+                                    <strong>제작자1</strong>
+                                </a>
+                            </div>
+                            <div class="prod-profile-star"> <!-- 오른쪽 -->
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
     </section>
 
 </body>
 </html>
+
+<script>
+    
+    //핀터레스트 게시판 적용
+    $(function () {
+
+        var $grid = $(".row").masonry({
+            columnWidth: 2,
+            itemSelector: '.creation-list-wrap'
+        });
+
+        $grid.imagesLoaded().progress(function () {
+
+            $grid.masonry('layout');
+
+        });
+
+    });
+    
+    //카테고리 버튼 
+
+    $("#creation-list-btn").on("click","button", function(){
+            
+        if( $(this).attr("class") == "creation-list-active"){
+            return;
+        }else if($(this).attr("class") == ""){
+            
+            var btnCheck = $("#creation-list-btn").children();
+            
+            for(var i = 0; i < btnCheck.length; i++){               
+                if(btnCheck[i].className == "creation-list-active"){
+                    btnCheck[i].classList.remove("creation-list-active");
+                }               
+            }
+             $(this).addClass("creation-list-active");
+        }
+    })
+    
+
+
+
+</script>
